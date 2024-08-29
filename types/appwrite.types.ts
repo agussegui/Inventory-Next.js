@@ -20,8 +20,10 @@ export interface Patient extends Models.Document {
   pastMedicalHistory: string | undefined;
   identificationType: string | undefined;
   identificationNumber: string | undefined;
-  identificationDocument: FormData | undefined;
+  identificationDocumentId: FormData | undefined;
   privacyConsent: boolean;
+  treatmentConsent: boolean;
+  disclosureConsent: boolean;
 }
 
 export interface Appointment extends Models.Document {
